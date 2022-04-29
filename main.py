@@ -106,8 +106,6 @@ async def get_delayed_orders():
             delayed.append(order.dict())
     return delayed
 
-# TODO: fix/improve this
-
 
 @ app.get("/orders/v1/status/{order_status}")
 async def get_orders_by_status(order_status: str):
